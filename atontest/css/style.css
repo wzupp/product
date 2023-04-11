@@ -1,0 +1,77 @@
+.table-wrap {
+  text-align: center;
+  display: inline-block;
+  background-color: #fff;
+  padding: 2rem 2rem;
+  color: #000;
+  margin-left: 45%;  
+  border-collapse: collapse;
+}
+.header{
+  margin-left: 45%;
+  font-size: large;
+}
+td:last-child {
+  padding-right: 0;
+  border-right: 1px solid grey;
+}
+td, th {
+  border: 1px solid black;
+  padding: 0.5rem;
+  border-right: 1px solid grey;
+  text-align: center;
+}
+
+td:last-child, th:last-child {
+  border-right: 1px solid black; /* добавляем правую рамку для всех ячеек, кроме последней в строке */
+}
+td:nth-last-child(1){
+  background-color: rgba(138, 223, 223, 0.788);
+}
+td:nth-last-child(2){
+  background-color: rgba(214, 214, 138, 0.904);
+}
+
+
+@media screen and (max-width: 767px) {
+  .table-wrap {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .header{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .form{
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .table-wrap {
+    width: 70%;
+    overflow-x: auto;
+  }
+  .header{
+    width: 70%;
+    overflow-x: auto;
+  }
+  .form{
+    width: 70%;
+    overflow-x: auto;
+  }
+
+}
+
+@media screen and (min-width: 992px)  {
+  .table-wrap {
+    width: 45%;
+  }
+  .header{
+    width: 45%;
+  }
+  .form{
+    width: 45%;
+  }
+}
